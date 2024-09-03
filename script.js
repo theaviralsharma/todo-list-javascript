@@ -8,15 +8,13 @@ function addTask(){
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
 
-        // Create the delete button
         let deleteButton = document.createElement("span");
         deleteButton.innerHTML = "\u00d7";
         li.appendChild(deleteButton);
 
-        // Create the edit button and append it next to the delete button
         let editButton = document.createElement("span");
         editButton.innerHTML = "✎";
-        editButton.style.right = "45px"; // Position edit button next to delete button
+        editButton.style.right = "45px";
         editButton.onclick = function() {
             editTask(li);
         };
@@ -52,7 +50,6 @@ function saveData(){
 
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
-    // Reattach event listeners after loading from localStorage
     let editButtons = document.querySelectorAll("ul li span:nth-child(3)");
     editButtons.forEach(button => {
         button.onclick = function() {

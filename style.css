@@ -99,7 +99,7 @@ ul li span:hover{
 
 }
 ul li span:nth-child(3) {
-    right: 45px; /* Positioning the edit button next to the delete button */
+    right: 45px;
     font-size: 20px;
 }
 
