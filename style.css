@@ -98,3 +98,11 @@ ul li span:hover{
     background: #edeef0;
 
 }
+ul li span:nth-child(3) {
+    right: 45px; /* Positioning the edit button next to the delete button */
+    font-size: 20px;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
