@@ -55,6 +55,25 @@ button{
     cursor: pointer;
     border-radius: 40px;
 }
+@media (min-width: 768px) {
+    /* Restore original styles for larger screens */
+    .row {
+        flex-direction: row;
+        padding-left: 20px;
+    }
+
+    input {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    button {
+        width: auto;
+        padding: 16px 50px;
+        margin-top: 0;
+    }
+}
+
 ul li{
     list-style: none;
     font-size: 17px;
