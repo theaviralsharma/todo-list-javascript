@@ -106,22 +106,19 @@ ul li span:nth-child(3) {
 ul li span:hover{
     background: #edeef0;
 }
-/* High Priority */
+
 ul li.high-priority {
     border-left: 5px solid red;
 }
 
-/* Medium Priority */
 ul li.medium-priority {
     border-left: 5px solid orange;
 }
 
-/* Low Priority */
 ul li.low-priority {
     border-left: 5px solid green;
 }
 
-/* Adjusting the span position due to border */
 ul li span {
     right: 10px;
 }

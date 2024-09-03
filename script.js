@@ -9,7 +9,6 @@ function addTask(){
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
 
-        // Assign priority class based on selected priority
         const priority = prioritySelect.value.toLowerCase() + "-priority";
         li.classList.add(priority);
 
@@ -32,23 +31,19 @@ function addTask(){
 }
 
 function editTask(li) {
-    // Extract current task text and priority
     let currentTask = li.childNodes[0].textContent;
     let currentPriority = li.classList.contains("high-priority") ? "High" :
                          li.classList.contains("medium-priority") ? "Medium" :
                          "Low";
 
-    // Prompt user to edit the task and priority
     let newTask = prompt("Edit your task", currentTask);
     let newPriority = prompt("Edit your priority (Low, Medium, High)", currentPriority);
 
     if (newTask !== null && newTask !== "") {
         li.childNodes[0].textContent = newTask;
 
-        // Remove old priority class
         li.classList.remove("high-priority", "medium-priority", "low-priority");
 
-        // Add new priority class
         if (newPriority === "High") {
             li.classList.add("high-priority");
         } else if (newPriority === "Medium") {
